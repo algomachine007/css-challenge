@@ -1,0 +1,19 @@
+@import "./config/reset";
+@import "./config/variables";
+@import "./config/typography";
+@import "./config/globals";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $main-font;
+  color: $gray-primary;
+}
