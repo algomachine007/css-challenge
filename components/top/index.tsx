@@ -15,6 +15,7 @@ const Top = () => {
       </div>
 
       <div className={styles.wrapper__lower}>
+
         <Card />
         <Card />
         <Card />
