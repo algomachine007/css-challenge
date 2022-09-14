@@ -1,8 +1,13 @@
-import React from 'react'
-
+import styles from './card.module.scss'
 const Card = () => {
   return (
-    <div>Card</div>
+    <div className={styles.card}>
+      <h4>Lacus eget elit duidapibus volutpat id.</h4>
+
+      <p>Ornare quis donec odio sagittis, gravida facilisi vivamus. Non potenti et feugiat urna tristique leo ut et. Ultrices diam.</p>
+
+      <p> Report • <time dateTime="February 3, 2021">February 3, 2021</time>  </p>
+    </div>
   )
 }
 

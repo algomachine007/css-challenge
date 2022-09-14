@@ -1,3 +1,4 @@
+import Card from "../card"
 import styles from './top.module.scss'
 const Top = () => {
   return (
@@ -14,8 +15,16 @@ const Top = () => {
         </h4>
 
         See all ==
+
+
+
       </div>
 
+      <div className={styles.wrapper__lower}>
+        <Card />
+        <Card />
+        <Card />
+      </div>
 
     </div>
   )

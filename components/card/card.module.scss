@@ -1,0 +1,32 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 30px;
+  gap: 10px;
+  max-width: 400px;
+  box-shadow: -10px 10px 24px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0%;
+    height: 4px;
+    background-color: linear-gradient(
+      90deg,
+      #fee003 0%,
+      #ffc503 12.4%,
+      #e6b011 24.9%,
+      #ff9350 37.4%,
+      #ff8035 49.91%,
+      #fe6c2d 62.41%,
+      #f74f58 74.91%,
+      #d04f53 87.41%,
+      #a95253 100%
+    );
+    width: 100%;
+  }
+}
