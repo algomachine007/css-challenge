@@ -1,0 +1,19 @@
+.wrapper {
+  margin-top: 24px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;
+
+  h2,
+  h4 {
+    color: #032849;
+  }
+  h4 {
+    font-weight: 600;
+  }
+}

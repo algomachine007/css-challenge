@@ -1,3 +1,5 @@
+import Image from "next/image"
+import Link from "next/link"
 import Card from "../card"
 import styles from './top.module.scss'
 const Top = () => {
@@ -11,7 +13,9 @@ const Top = () => {
         <h4>
           Partnerships supporting local newsrooms with world-class resources
         </h4>
-        See all ==
+
+        <button>
+          <span>See all </span> <span> <Image src='/arrow.png' width={20} height={16} /> </span>    </button>
       </div>
 
       <div className={styles.wrapper__lower}>
