@@ -1,5 +1,5 @@
 .wrapper {
-  background-color: $blue-primary;
+  background-color: #032849;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,6 +10,10 @@
     max-width: 650px;
     text-align: center;
     margin-bottom: 70px;
+
+    h4 {
+      margin: 20px 0;
+    }
   }
 
   &__lower {

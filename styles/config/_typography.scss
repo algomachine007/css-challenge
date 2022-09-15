@@ -12,7 +12,13 @@ $h2: $h3 * $ratio; // 1.333 * 233.3% = 266.7% >>> 32px
 $h1: $h2 * $ratio; // 1.333 * 266.7% = 300% >>> 36px
 
 p {
-  font-size: $font-size - 25; // 100% - 25% = 75% >>> 12px
+  font-size: $font-size + 20; // 100% - 25% = 75% >>> 12px
+  font-family: Maitree;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 /* note the smaller sizes for mobile */
@@ -37,6 +43,12 @@ h1 {
 @media (min-width: 40em) {
   h4 {
     font-size: $h4;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
   }
 
   h3 {
@@ -45,6 +57,11 @@ h1 {
 
   h2 {
     font-size: $h2;
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 72px;
   }
 
   h1 {

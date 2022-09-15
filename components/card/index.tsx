@@ -3,7 +3,7 @@ const Card = () => {
   return (
     <div className={styles.card}>
       <div className={styles.adornment}></div>
-      <h4>Lacus eget elit duidapibus volutpat id.</h4>
+      <h4>Lacus eget elit dui dapibus volutpat id.</h4>
 
       <p>Ornare quis donec odio sagittis, gravida facilisi vivamus. Non potenti et feugiat urna tristique leo ut et. Ultrices diam.</p>
 
