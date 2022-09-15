@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import Button from "../button"
 import Card from "../card"
 import SectionWrapper from "../layout/sectionWrapper"
 import styles from './top.module.scss'
@@ -15,8 +16,9 @@ const Top = () => {
           Partnerships supporting local newsrooms with world-class resources
         </h4>
 
-        <button>
-          <span>See all </span> <span> <Image src='/arrow.png' width={20} height={16} /> </span>    </button>
+
+
+        <Button text='See all' />
       </div>
 
       <div className={styles.wrapper__lower}>
