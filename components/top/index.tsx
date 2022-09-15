@@ -1,10 +1,11 @@
 import Image from "next/image"
 import Link from "next/link"
 import Card from "../card"
+import SectionWrapper from "../layout/sectionWrapper"
 import styles from './top.module.scss'
 const Top = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper}>  <SectionWrapper>
       <div className={styles.wrapper__upper}>
         <h2>
           Powerful news collaborations
@@ -24,6 +25,7 @@ const Top = () => {
         <Card />
         <Card />
       </div>
+    </SectionWrapper>
     </div>
   )
 }

@@ -1,9 +1,10 @@
 import styles from './bottom.module.scss'
+import SectionWrapper from './../layout/sectionWrapper'
 const Bottom = () => {
   return (
     <div className={styles.wrapper}>
 
-      <div className={styles.container}>
+      <SectionWrapper>
         <h2>
           A world made safer for all
         </h2>
@@ -13,7 +14,7 @@ const Bottom = () => {
         </h4>
 
         Climate Justice
-      </div>
+      </SectionWrapper>
 
     </div>
   )
