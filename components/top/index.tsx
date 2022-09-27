@@ -4,6 +4,7 @@ import Button from '../button';
 import Card from '../card';
 import SectionWrapper from '../layout/sectionWrapper';
 import styles from './top.module.scss';
+import cardData from './../../data/cardData.json';
 const Top = () => {
   return (
     <div className={styles.wrapper}>
@@ -20,9 +21,15 @@ const Top = () => {
         </div>
 
         <div className={styles.wrapper__lower}>
-          <Card />
-          <Card />
-          <Card />
+          {cardData.map(({ heading, body, id, type, time }) => (
+            <Card
+              key={id}
+              heading={heading}
+              body={body}
+              type={type}
+              time={time}
+            />
+          ))}
         </div>
       </SectionWrapper>
     </div>
