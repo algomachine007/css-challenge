@@ -5,17 +5,14 @@ import Card from '../card';
 import SectionWrapper from '../layout/sectionWrapper';
 import styles from './top.module.scss';
 import cardData from './../../data/cardData.json';
-const Top = () => {
+const Top = ({ heading, subHeading }) => {
   return (
     <div className={styles.wrapper}>
-      {' '}
       <SectionWrapper>
         <div className={styles.wrapper__upper}>
-          <h2>Powerful news collaborations</h2>
+          <h2>{heading}</h2>
 
-          <h4>
-            Partnerships supporting local newsrooms with world-class resources
-          </h4>
+          <h4>{subHeading}</h4>
 
           <Button text='See all' />
         </div>
