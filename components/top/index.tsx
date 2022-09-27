@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from '../button';
-import Card from '../card';
+
 import SectionWrapper from '../layout/sectionWrapper';
 import styles from './top.module.scss';
 import cardData from './../../data/cardData.json';
-const Top = ({ heading, subHeading }) => {
+import Card from '@components/card';
+import { ITopType } from './types';
+const Top = ({ heading, subHeading }: ITopType) => {
   return (
     <div className={styles.wrapper}>
       <SectionWrapper>
