@@ -15,6 +15,16 @@
   }
 }
 
+.card[data-variant="large"] {
+  width: 980px;
+  height: 318px;
+  left: 230px;
+  top: 180px;
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: -10px 10px 20px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+}
+
 .adornment {
   position: absolute;
   left: 0;
