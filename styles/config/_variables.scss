@@ -1,5 +1,7 @@
 // creating a design system that ensures that any change here should affect the whole system/project
+
 $white: #fff;
+
 $blue-primary: #032849;
 $opacity-primary: rgba(19, 129, 215, 0.12);
 
@@ -15,3 +17,15 @@ $main-font: "Work Sans", sans-serif;
 $letter-spacing: -1.5px;
 
 /* gradients */
+$card-gradient: linear-gradient(
+  90deg,
+  #fee003 0%,
+  #ffc503 12.4%,
+  #e6b011 24.9%,
+  #ff9350 37.4%,
+  #ff8035 49.91%,
+  #fe6c2d 62.41%,
+  #f74f58 74.91%,
+  #d04f53 87.41%,
+  #a95253 100%
+);

@@ -7,10 +7,8 @@ import data from './../data/top.json';
 const Home: NextPage = () => {
   return (
     <Layout>
-      <section>
-        <Top {...data} />
-        <Bottom />
-      </section>
+      <Top {...data} />
+      <Bottom />
     </Layout>
   );
 };

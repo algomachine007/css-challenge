@@ -1,7 +1,9 @@
+@use "./../../styles/config/variables" as variable;
+
 .button {
   background: transparent;
   border: none;
-  color: $white;
+  color: variable.$white;
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 700;
@@ -15,5 +17,5 @@
 }
 
 .button[data-variant="dark"] {
-  color: $blue-primary;
+  color: variable.$blue-primary;
 }

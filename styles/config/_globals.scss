@@ -1,2 +1,2 @@
-@import "mixins";
-@import "variables";
+@use "./variables" as variable;
+@use "./mixins" as mixin;

@@ -1,3 +1,5 @@
+@use "./../../styles/config/variables" as variable;
+
 .card {
   position: relative;
   display: flex;
@@ -30,17 +32,6 @@
   left: 0;
   top: 0%;
   height: 3px;
-  background: linear-gradient(
-    90deg,
-    #fee003 0%,
-    #ffc503 12.4%,
-    #e6b011 24.9%,
-    #ff9350 37.4%,
-    #ff8035 49.91%,
-    #fe6c2d 62.41%,
-    #f74f58 74.91%,
-    #d04f53 87.41%,
-    #a95253 100%
-  );
+  background: variable.$card-gradient;
   width: 100%;
 }

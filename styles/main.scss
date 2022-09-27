@@ -1,7 +1,7 @@
-@import "./config/reset";
-@import "./config/variables";
-@import "./config/typography";
-@import "./config/globals";
+@use "./config/variables" as variable;
+@use "./config/reset" as reset;
+@use "./config/typography" as typography;
+@use "./config/globals" as globals;
 
 * {
   box-sizing: border-box;
@@ -14,6 +14,6 @@ html {
 }
 
 body {
-  font-family: $main-font;
-  // color: $gray-primary;
+  font-family: variable.$main-font;
+  color: variable.$white;
 }
