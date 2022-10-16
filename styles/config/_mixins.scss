@@ -1,18 +1,5 @@
 @use "./variables" as variable;
 
-@mixin anchorStyles() {
-  color: variable.$primary-color;
-  &:visited {
-    color: variable.$secondary-color;
-  }
-  &:hover {
-    color: variable.$neutral-color;
-  }
-  &:active {
-    color: variable.$neutral-color;
-  }
-}
-
 @mixin center {
   position: absolute;
   top: 50%;
