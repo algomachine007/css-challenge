@@ -11,12 +11,11 @@ const Button = ({ isDark, text, ...rest }: Button) => {
     <button className={styles.button} {...rest} data-variant={String(isDark)}>
       <span>{text} </span>
       <span>
-        {' '}
         <Image
           src={isDark ? '/Union.png' : '/arrow.png'}
           width={20}
           height={16}
-        />{' '}
+        />
       </span>
     </button>
   );
