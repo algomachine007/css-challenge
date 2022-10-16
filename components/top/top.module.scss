@@ -1,31 +1,42 @@
+@use "@styles/config/mixins" as mixin;
+@use "@styles/config/variables" as variable;
+
 .wrapper {
-  background-color: #032849;
+  background-color: variable.$blue-primary;
 
   &__upper {
+    /* position and layout */
     max-width: 650px;
     text-align: center;
-    margin-bottom: 70px;
     height: auto;
+    /* box-model */
+    margin-bottom: 70px;
 
-    @media screen and (min-width: 1300px) {
+    @media #{variable.$lg-tablet-and-up} {
+      /* position and layout */
       position: relative;
+      /* display and visibility */
       height: 45vh;
     }
 
     h4 {
+      /* box-model */
       margin: 20px 0;
       width: 95%;
+      /* typography */
       font-weight: 600;
     }
   }
 
   &__lower {
+    /* display and visibility */
     display: flex;
     flex-flow: row wrap;
     gap: 60px;
     justify-content: center;
 
-    @media screen and (min-width: 1200px) {
+    @media #{variable.$lg-tablet-and-up} {
+      /* position and layout */
       position: absolute;
       top: 45%;
       z-index: 2;

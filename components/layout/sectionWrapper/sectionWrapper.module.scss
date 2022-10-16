@@ -1,18 +1,23 @@
 @use "@styles/config/mixins" as mixin;
+@use "@styles/config/variables" as variable;
 
 .wrapper {
+  /* box-model */
   @include mixin.colFlex;
   justify-content: center;
   align-items: center;
+  /* box-model */
   padding: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media #{variable.$tablet-and-up} {
+    /* box-model */
     padding: 80px 10px;
   }
 }
 
 .wrapper[data-variant="bg"] {
   position: relative;
+  /* display and visibility */
   background-image: url("/bailey.jpg");
   height: 80vh;
   background-position: center center;

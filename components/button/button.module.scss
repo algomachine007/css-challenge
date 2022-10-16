@@ -2,16 +2,20 @@
 @use "@styles/config/mixins" as mixin;
 
 .button {
+  /* position and layout */
   display: inline-block;
   background: transparent;
   border: none;
   color: variable.$white;
   cursor: pointer;
+
+  /* box-model */
   padding: 20px 0;
 
   @include mixin.btnText;
 
   span {
+    /* box-model */
     margin-left: 5px;
   }
 }

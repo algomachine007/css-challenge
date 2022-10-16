@@ -1,18 +1,27 @@
+@use "@styles/config/variables" as variable;
+@use "@styles/config/mixins" as mixin;
+
 .wrapper {
+  /* position and layout */
   height: 60vh;
 
   h2,
   h4 {
-    color: #032849;
+    /* typography */
+    color: variable.$blue-primary;
     text-align: center;
+
+    /* box-model */
     margin: 20px auto;
   }
   h4 {
+    /* typography */
     font-weight: 600;
   }
 }
 
 .landingImage {
+  /* position and layout */
   height: 100px;
   z-index: 0;
 }

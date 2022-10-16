@@ -1,16 +1,16 @@
 @use "@styles/config/variables" as variable;
 @use "@styles/config/mixins" as mixin;
 .container {
-  /* box-model */
+  /* position and layout */
   @include mixin.center;
   @include mixin.colFlex;
 
   width: 85%;
-
+  /* box-model */
   padding: 20px;
   color: variable.$blue-primary;
 
-  /* White Tint 65% */
+  /* display and visibility */
   background: variable.$bannerBg;
   box-shadow: variable.$banner-shadow;
   backdrop-filter: blur(15px);
