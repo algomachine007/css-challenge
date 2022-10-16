@@ -1,9 +1,10 @@
+@use "@styles/config/mixins" as mixin;
+
 .wrapper {
-  display: flex;
+  @include mixin.colFlex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  flex-direction: column;
 
   @media screen and (min-width: 768px) {
     padding: 80px 10px;
@@ -11,8 +12,8 @@
 }
 
 .wrapper[data-variant="bg"] {
+  position: relative;
   background-image: url("/bailey.jpg");
   height: 80vh;
   background-position: center center;
-  position: relative;
 }

@@ -1,9 +1,6 @@
 import React from 'react';
 import styles from './sectionWrapper.module.scss';
-type SectionWrapper = {
-  children: React.ReactNode;
-  variant?: string;
-};
+import { SectionWrapper } from './types';
 
 const SectionWrapper = ({ children, variant }: SectionWrapper) => {
   return (

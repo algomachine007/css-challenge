@@ -9,7 +9,6 @@ const Card = ({ heading, body, time, type }: ICardType<string>) => {
       <p>{body}</p>
 
       <p>
-        {' '}
         {type} • <time dateTime='February 3, 2021'>{time}</time>{' '}
       </p>
     </div>

@@ -1,16 +1,16 @@
 @use "@styles/config/variables" as variable;
+@use "@styles/config/mixins" as mixin;
 
 .button {
+  display: inline-block;
   background: transparent;
   border: none;
   color: variable.$white;
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
   cursor: pointer;
-  display: inline-block;
   padding: 20px 0;
+
+  @include mixin.btnText;
+
   span {
     margin-left: 5px;
   }

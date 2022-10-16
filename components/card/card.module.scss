@@ -1,9 +1,10 @@
 @use "@styles/config/variables" as variable;
+@use "@styles/config/mixins" as mixin;
 
 .card {
   position: relative;
-  display: flex;
-  flex-direction: column;
+
+  @include mixin.colFlex;
   justify-content: flex-end;
   align-items: flex-start;
   padding: 30px;
