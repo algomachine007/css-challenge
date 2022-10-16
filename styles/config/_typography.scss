@@ -14,7 +14,6 @@ $h1: $h2 * $ratio; // 1.333 * 266.7% = 300% >>> 36px
 p {
   font-size: $font-size + 20; // 100% - 25% = 75% >>> 12px
   font-family: Maitree;
-  color: white;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -61,10 +60,8 @@ h1 {
 
   h2 {
     font-size: $h2;
-    color: white;
     font-style: normal;
     font-weight: 300;
-    font-size: 64px;
     line-height: 72px;
   }
 
