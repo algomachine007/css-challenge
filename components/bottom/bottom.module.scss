@@ -1,6 +1,6 @@
 .wrapper {
-  margin-top: 24px;
   height: 60vh;
+
   h2,
   h4 {
     color: #032849;
@@ -10,4 +10,9 @@
   h4 {
     font-weight: 600;
   }
+}
+
+.landingImage {
+  height: 100px;
+  z-index: 0;
 }

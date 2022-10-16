@@ -9,3 +9,10 @@
     padding: 80px 10px;
   }
 }
+
+.wrapperWithBg {
+  background-image: url("/bailey.jpg");
+  height: 80vh;
+  background-position: center center;
+  position: relative;
+}
