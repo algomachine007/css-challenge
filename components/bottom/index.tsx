@@ -1,12 +1,13 @@
-import styles from "./bottom.module.scss";
 import SectionWrapper from "@layout/sectionWrapper";
+
 import Banner from "@components/banner";
 import { IBottomProps } from "./types";
+import styles from "./bottom.module.scss";
 
 const Bottom = ({ info }: IBottomProps) => {
   return (
     <div className={styles.wrapper}>
-      <SectionWrapper withBg>
+      <SectionWrapper variant="bg">
         <Banner
           title={info.title}
           description={info.description}

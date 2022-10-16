@@ -2,12 +2,15 @@ import React from 'react';
 import styles from './sectionWrapper.module.scss';
 type SectionWrapper = {
   children: React.ReactNode;
-  withBg?: boolean;
+  variant?: string;
 };
 
-const SectionWrapper = ({ children, withBg }: SectionWrapper) => {
-  const className = withBg ? styles.wrapperWithBg : styles.wrapper;
-  return <div className={className}>{children}</div>;
+const SectionWrapper = ({ children, variant }: SectionWrapper) => {
+  return (
+    <div className={styles.wrapper} data-variant={String(variant)}>
+      {children}
+    </div>
+  );
 };
 
 export default SectionWrapper;

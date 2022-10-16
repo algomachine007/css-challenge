@@ -10,7 +10,7 @@
   }
 }
 
-.wrapperWithBg {
+.wrapper[data-variant="bg"] {
   background-image: url("/bailey.jpg");
   height: 80vh;
   background-position: center center;
