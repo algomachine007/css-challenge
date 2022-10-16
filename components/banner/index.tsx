@@ -10,7 +10,7 @@ const Banner = ({ title, description, buttonText }: BannerProps) => {
 
       <h4>{description}</h4>
 
-      <Button isDark text={buttonText} />
+      <Button isDark='dark' text={buttonText} />
     </div>
   );
 };
