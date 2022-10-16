@@ -1,17 +1,15 @@
 @use "@styles/config/variables" as variable;
 @use "@styles/config/mixins" as mixin;
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px;
   @include mixin.center;
+  @include mixin.colFlex;
   color: variable.$blue-primary;
   width: 85%;
 
   /* White Tint 65% */
-  background: rgba(255, 255, 255, 0.65);
-  box-shadow: -10px 10px 20px rgba(255, 255, 255, 0.1);
+  background: variable.$bannerBg;
+  box-shadow: variable.$banner-shadow;
   backdrop-filter: blur(15px);
 
   h2 {
