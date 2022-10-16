@@ -1,16 +1,19 @@
 // creating a design system that ensures that any change here should affect the whole system/project
 
 $white: #fff;
-
 $blue-primary: #032849;
 $opacity-primary: rgba(19, 129, 215, 0.12);
 
 // box shadows
+$card-shadow: -10px 10px 24px rgba(255, 255, 255, 0.2);
 
-//width
+$banner-shadow: -10px 10px 20px rgba(255, 255, 255, 0.1);
 
-$xsmall-and-up: "screen and (min-width : 480px)";
+//media queries
 
+$xsmall-and-up: "screen and (min-width : 600px)";
+
+// fonts
 $main-font: "Work Sans", sans-serif;
 
 // letter spacing
@@ -30,7 +33,4 @@ $card-gradient: linear-gradient(
   #a95253 100%
 );
 
-$card-shadow: -10px 10px 24px rgba(255, 255, 255, 0.2);
-
-$banner-shadow: -10px 10px 20px rgba(255, 255, 255, 0.1);
 $bannerBg: rgba(255, 255, 255, 0.65);

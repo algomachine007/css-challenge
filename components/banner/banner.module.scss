@@ -1,11 +1,14 @@
 @use "@styles/config/variables" as variable;
 @use "@styles/config/mixins" as mixin;
 .container {
-  padding: 20px;
+  /* box-model */
   @include mixin.center;
   @include mixin.colFlex;
-  color: variable.$blue-primary;
+
   width: 85%;
+
+  padding: 20px;
+  color: variable.$blue-primary;
 
   /* White Tint 65% */
   background: variable.$bannerBg;
@@ -13,13 +16,16 @@
   backdrop-filter: blur(15px);
 
   h2 {
+    /* typography */
     font-weight: 300;
 
-    @media screen and (min-width: 600px) {
+    @media #{variable.$xsmall-and-up} {
+      /* typography */
       font-size: 60px;
     }
   }
-  @media screen and (min-width: 600px) {
+  @media #{variable.$xsmall-and-up} {
+    /* box-model */
     width: 60%;
     padding: 60px;
   }
