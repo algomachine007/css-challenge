@@ -1,13 +1,17 @@
 import styles from "./bottom.module.scss";
-import SectionWrapper from "./../layout/sectionWrapper";
-import Image from "next/image";
-import Button from "../button";
+import SectionWrapper from "@layout/sectionWrapper";
 import Banner from "@components/banner";
-const Bottom = () => {
+import { IBottomProps } from "./types";
+
+const Bottom = ({ info }: IBottomProps) => {
   return (
     <div className={styles.wrapper}>
       <SectionWrapper>
-        <Banner title="Amaben" />
+        <Banner
+          title={info.title}
+          description={info.description}
+          buttonText="Climate Justice"
+        />
       </SectionWrapper>
     </div>
   );
