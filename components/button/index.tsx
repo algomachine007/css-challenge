@@ -1,12 +1,8 @@
 import Image from 'next/image';
-import React from 'react';
 import styles from './button.module.scss';
+import { ButtonProps } from './types';
 
-type Button = {
-  isDark?: string;
-  text: string;
-};
-const Button = ({ isDark, text, ...rest }: Button) => {
+const Button = ({ isDark, text, ...rest }: ButtonProps) => {
   return (
     <button className={styles.button} {...rest} data-variant={String(isDark)}>
       <span>{text} </span>
@@ -15,6 +11,7 @@ const Button = ({ isDark, text, ...rest }: Button) => {
           src={isDark ? '/Union.png' : '/arrow.png'}
           width={20}
           height={16}
+          alt={text}
         />
       </span>
     </button>

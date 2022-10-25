@@ -1,6 +1,7 @@
 import styles from './card.module.scss';
 import { ICardType } from './types';
-const Card = ({ heading, body, time, type }: ICardType<string>) => {
+
+const Card = ({ heading, body, time, type }: ICardType) => {
   return (
     <div className={styles.card}>
       <div className={styles.adornment}></div>
