@@ -1,5 +1,6 @@
 @use "@styles/config/variables" as variable;
 @use "@styles/config/mixins" as mixin;
+
 .container {
   /* position and layout */
   @include mixin.center;

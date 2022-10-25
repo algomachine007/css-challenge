@@ -10,13 +10,13 @@
     text-align: center;
     height: auto;
     /* box-model */
-    margin-bottom: 70px;
+    margin-bottom: 140px;
 
     @media #{variable.$lg-tablet-and-up} {
       /* position and layout */
       position: relative;
       /* display and visibility */
-      height: 45vh;
+      max-height: 60vh;
     }
 
     h4 {
@@ -38,7 +38,7 @@
     @media #{variable.$lg-tablet-and-up} {
       /* position and layout */
       position: absolute;
-      top: 45%;
+      top: 400px;
       z-index: 2;
     }
   }
