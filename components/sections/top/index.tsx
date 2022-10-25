@@ -1,9 +1,9 @@
-import Button from "../button";
+import Button from "../../elements/button";
 
-import SectionWrapper from "../../layouts/sectionWrapper";
+import SectionWrapper from "../../../layouts/sectionWrapper";
 import styles from "./top.module.scss";
 import cardData from "@/data/cardData.json";
-import Card from "@components/card";
+import Card from "@components/elements/card";
 import { ITopType } from "./types";
 
 const Top = ({ heading, subHeading }: ITopType) => {

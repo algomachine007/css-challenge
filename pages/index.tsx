@@ -1,8 +1,8 @@
-import Bottom from '@/components/bottom';
-import Top from '@/components/top';
-import type { NextPage } from 'next';
-import data from '@/data/top.json';
-import info from '@/data/banner.json';
+import Bottom from "@components/sections/bottom";
+import Top from "@components/sections/top";
+import type { NextPage } from "next";
+import data from "@/data/top.json";
+import info from "@/data/banner.json";
 
 const Home: NextPage = () => {
   return (

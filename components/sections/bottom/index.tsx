@@ -1,6 +1,6 @@
 import SectionWrapper from "@layouts/sectionWrapper";
 
-import Banner from "@components/banner";
+import Banner from "@components/elements/banner";
 import { IBottomProps } from "./types";
 import styles from "./bottom.module.scss";
 

@@ -1,7 +1,7 @@
-import Button from '@components/button';
-import React from 'react';
-import { BannerProps } from './types';
-import styles from './banner.module.scss';
+import Button from "@components/elements/button";
+import React from "react";
+import { BannerProps } from "./types";
+import styles from "./banner.module.scss";
 
 const Banner = ({ title, description, buttonText }: BannerProps) => {
   return (
@@ -10,7 +10,7 @@ const Banner = ({ title, description, buttonText }: BannerProps) => {
 
       <h4>{description}</h4>
 
-      <Button isDark='dark' text={buttonText} />
+      <Button isDark="dark" text={buttonText} />
     </div>
   );
 };
