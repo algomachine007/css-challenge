@@ -1,4 +1,4 @@
-import SectionWrapper from "@layout/sectionWrapper";
+import SectionWrapper from "@components/layouts/sectionWrapper";
 
 import Banner from "@components/banner";
 import { IBottomProps } from "./types";

@@ -1,10 +1,11 @@
-import Button from '../button';
+import Button from "../button";
 
-import SectionWrapper from '../layout/sectionWrapper';
-import styles from './top.module.scss';
-import cardData from '@/data/cardData.json';
-import Card from '@components/card';
-import { ITopType } from './types';
+import SectionWrapper from "../../layouts/sectionWrapper";
+import styles from "./top.module.scss";
+import cardData from "@/data/cardData.json";
+import Card from "@components/card";
+import { ITopType } from "./types";
+
 const Top = ({ heading, subHeading }: ITopType) => {
   return (
     <div className={styles.wrapper}>
@@ -14,7 +15,7 @@ const Top = ({ heading, subHeading }: ITopType) => {
 
           <h4>{subHeading}</h4>
 
-          <Button text='See all' />
+          <Button text="See all" />
         </div>
 
         <div className={styles.wrapper__lower}>

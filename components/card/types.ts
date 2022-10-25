@@ -1,3 +1,3 @@
 export interface ICardType {
-  [key : string] : string
+  [key: string | number]: string | number
 }
