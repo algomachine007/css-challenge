@@ -6,7 +6,7 @@
       "@styles/*": ["styles/*"],
       "@*": ["./*"],
       "@assets/*": ["assets/*"],
-      "@layout/*": ["components/layout/*"],
+      "@layout/*": ["components/layouts/*"],
       "@data/*": ["data/*"]
     },
     "target": "es5",

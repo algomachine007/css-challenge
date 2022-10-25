@@ -1,3 +1,6 @@
 export interface ICardType {
-  [key: string | number]: string | number
+  time: string
+  heading: string,
+  body: string,
+  type: string
 }
